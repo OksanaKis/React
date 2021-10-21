@@ -7,7 +7,10 @@ const api = {
 }
 
 function App() {
-
+  const [query, setQuery] = useState('');
+  console.log(query);
+  const [weather, setWeather] = useState({});
+  const [icon, setIcon] = useState();
 
 
   const dateBuilder = (d) => {
