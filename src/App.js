@@ -22,7 +22,7 @@ function App() {
     return `${day} ${date} ${month} ${year}`
   }
 
-  
+
   return (
     <div className="App">
       <main>
@@ -38,7 +38,7 @@ function App() {
           <div>
             <div className="location-box">
             <div className="location"></div>
-            <div className="date"></div>
+            <div className="date">{dateBuilder(new Date())}</div>
             </div>
             <div className="weather-box">
             <div className="temp"></div>
