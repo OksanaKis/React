@@ -9,7 +9,30 @@ const api = {
 function App() {
   return (
     <div className="App">
-      
+      <main>
+        <div className="search-box">
+          <input 
+          type="text" 
+          className="search-bar"
+          placeholder="Search"
+          value=""
+          />
+        </div>
+        <div>
+          <div>
+            <div className="location-box">
+            <div className="location"></div>
+            <div className="date"></div>
+            </div>
+            <div className="weather-box">
+            <div className="temp"></div>
+            <div className="humidity"></div>
+            <div className="weather"></div>
+            <div className="icon"></div>
+          </div>
+        </div>
+        </div>
+      </main>
     </div>
   );
 }
