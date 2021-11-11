@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/React/static/css/main.ec0afb5f.chunk.css",
+    "main.js": "/React/static/js/main.d836276e.chunk.js",
+    "main.js.map": "/React/static/js/main.d836276e.chunk.js.map",
+    "runtime-main.js": "/React/static/js/runtime-main.70d64ccf.js",
+    "runtime-main.js.map": "/React/static/js/runtime-main.70d64ccf.js.map",
+    "static/js/2.fcd545da.chunk.js": "/React/static/js/2.fcd545da.chunk.js",
+    "static/js/2.fcd545da.chunk.js.map": "/React/static/js/2.fcd545da.chunk.js.map",
+    "index.html": "/React/index.html",
+    "static/css/main.ec0afb5f.chunk.css.map": "/React/static/css/main.ec0afb5f.chunk.css.map",
+    "static/js/2.fcd545da.chunk.js.LICENSE.txt": "/React/static/js/2.fcd545da.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/React/static/media/zetong-li-UC1HP-zhEmU-unsplash.7cd32a74.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70d64ccf.js",
+    "static/js/2.fcd545da.chunk.js",
+    "static/css/main.ec0afb5f.chunk.css",
+    "static/js/main.d836276e.chunk.js"
+  ]
+}
