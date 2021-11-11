@@ -8,7 +8,45 @@ const api = {
 
 function App() {
 
-  console.log('hhhhhhh');
+  const [query, setQuery] = useState('');
+  console.log(query);
+  const [weather, setWeather] = useState({});
+  const [icon, setIcon] = useState();
+
+  const search = async (event) => {
+    try {
+    if (event.key === "Enter") {
+      console.log(event.key);
+      await  fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+      .then(res => res.json())
+      .then(result => {
+        setWeather(result);
+        setQuery('');
+        console.log(result);
+        // console.log(result.weather[0].icon);
+        setIcon(<img src={`http://openweathermap.org/img/w/${result.weather[0].icon}.png`} />);
+      });
+    }
+  } catch (error) {
+    // console.log(`Error: ${error.message}`);
+    console.log(error.message);
+  }
+  }
+  
+
+  const dateBuilder = (d) => {
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    let day = days[d.getDay()];
+    let date = d.getDate();
+    let month = months[d.getMonth()];
+    let year = d.getFullYear();
+
+    return `${day} ${date} ${month} ${year}`
+  }
+
+  
   return (
     <div className={
       typeof weather.main != "undefined"
