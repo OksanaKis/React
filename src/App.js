@@ -63,23 +63,28 @@ function App() {
           type="text" 
           className="search-bar"
           placeholder="Search"
-          value=""
+          onChange={e => setQuery(e.target.value)}
+          value={query}
+          onKeyPress={search}
           />
         </div>
-        <div>
+
+        {(typeof weather.main != "undefined") ? (
           <div>
-            <div className="location-box">
-            <div className="location">{weather.name}, {weather.sys.country}</div>
-            <div className="date">{dateBuilder(new Date())}</div>
-            </div>
-            <div className="weather-box">
-            <div className="temp"></div>
-            <div className="humidity"></div>
-            <div className="weather"></div>
-            <div className="icon"></div>
+        <div className="location-box">
+        <div className="location">{weather.name}, {weather.sys.country}</div>
+        <div className="date">{dateBuilder(new Date())}</div>
+        </div>
+        <div className="weather-box">
+          <div className="temp">
+          {Math.round(weather.main.temp)}°C
           </div>
+          <div className="humidity">Humidity {weather.main.humidity}%, Wind {weather.wind.speed}km/h</div>
+          <div className="weather">{weather.weather[0].main}, {weather.weather[0].description}</div>
+          <div className="icon">{icon}</div>
         </div>
         </div>
+        ) : ('')}
       </main>
     </div>
   );
