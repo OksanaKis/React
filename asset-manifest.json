@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/React/static/css/main.ec0afb5f.chunk.css",
-    "main.js": "/React/static/js/main.d836276e.chunk.js",
-    "main.js.map": "/React/static/js/main.d836276e.chunk.js.map",
-    "runtime-main.js": "/React/static/js/runtime-main.70d64ccf.js",
-    "runtime-main.js.map": "/React/static/js/runtime-main.70d64ccf.js.map",
-    "static/js/2.fcd545da.chunk.js": "/React/static/js/2.fcd545da.chunk.js",
-    "static/js/2.fcd545da.chunk.js.map": "/React/static/js/2.fcd545da.chunk.js.map",
-    "index.html": "/React/index.html",
-    "static/css/main.ec0afb5f.chunk.css.map": "/React/static/css/main.ec0afb5f.chunk.css.map",
-    "static/js/2.fcd545da.chunk.js.LICENSE.txt": "/React/static/js/2.fcd545da.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/React/static/media/zetong-li-UC1HP-zhEmU-unsplash.7cd32a74.jpg"
+    "main.css": "/http://oksanakis.github.io/React_Weather_App/static/css/main.ec831e6a.chunk.css",
+    "main.js": "/http://oksanakis.github.io/React_Weather_App/static/js/main.d836276e.chunk.js",
+    "main.js.map": "/http://oksanakis.github.io/React_Weather_App/static/js/main.d836276e.chunk.js.map",
+    "runtime-main.js": "/http://oksanakis.github.io/React_Weather_App/static/js/runtime-main.2647825f.js",
+    "runtime-main.js.map": "/http://oksanakis.github.io/React_Weather_App/static/js/runtime-main.2647825f.js.map",
+    "static/js/2.fcd545da.chunk.js": "/http://oksanakis.github.io/React_Weather_App/static/js/2.fcd545da.chunk.js",
+    "static/js/2.fcd545da.chunk.js.map": "/http://oksanakis.github.io/React_Weather_App/static/js/2.fcd545da.chunk.js.map",
+    "index.html": "/http://oksanakis.github.io/React_Weather_App/index.html",
+    "static/css/main.ec831e6a.chunk.css.map": "/http://oksanakis.github.io/React_Weather_App/static/css/main.ec831e6a.chunk.css.map",
+    "static/js/2.fcd545da.chunk.js.LICENSE.txt": "/http://oksanakis.github.io/React_Weather_App/static/js/2.fcd545da.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/http://oksanakis.github.io/React_Weather_App/static/media/zetong-li-UC1HP-zhEmU-unsplash.7cd32a74.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.70d64ccf.js",
+    "static/js/runtime-main.2647825f.js",
     "static/js/2.fcd545da.chunk.js",
-    "static/css/main.ec0afb5f.chunk.css",
+    "static/css/main.ec831e6a.chunk.css",
     "static/js/main.d836276e.chunk.js"
   ]
 }
