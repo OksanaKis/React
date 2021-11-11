@@ -2,7 +2,8 @@
 
 This application displays weather forecasts from the [Openweathermap](https://openweathermap.org/api)
 Weather App allows the user to search for the current weather for a city.Depends on the temperature , the user can see different images
-![image]()
+![image1](https://github.com/OksanaKis/React/blob/main/src/images/weather1.png)
+![image2](https://github.com/OksanaKis/React/blob/main/src/images/weather2.png)
 
 
 
