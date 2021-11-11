@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 const api = {
   key: "c60621f6b01ac75d9cb4f8afef300fdc",
@@ -13,25 +13,30 @@ function App() {
   const [weather, setWeather] = useState({});
   const [icon, setIcon] = useState();
 
-  const search = async (event) => {
+  const fetchResult = async () => {
     try {
-    if (event.key === "Enter") {
-      console.log(event.key);
-      await  fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
-      .then(res => res.json())
-      .then(result => {
-        setWeather(result);
-        setQuery('');
-        console.log(result);
-        // console.log(result.weather[0].icon);
-        setIcon(<img src={`http://openweathermap.org/img/w/${result.weather[0].icon}.png`} />);
-      });
-    }
-  } catch (error) {
-    // console.log(`Error: ${error.message}`);
-    console.log(error.message);
+    await fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+        .then(res => res.json())
+        .then(result => {
+          setWeather(result);
+          setQuery('');
+          console.log(result);
+          setIcon(<img src={`http://openweathermap.org/img/w/${result.weather[0].icon}.png`} />);
+        });
+      } catch (error) {
+        // console.log(`Error: ${error.message}`);
+        console.log(error.message);
+      }
   }
+  
+  const search = evt => {
+    if (evt.key === "Enter") fetchResult();
   }
+  
+  useEffect(() => {
+    // search once after first render
+    fetchResult();
+  }, []) // no dependency: execute it once after first render
   
 
   const dateBuilder = (d) => {
