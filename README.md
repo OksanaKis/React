@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Weather forecast
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application displays weather forecasts from the [Openweathermap](https://openweathermap.org/api)
+Weather App allows the user to search for the current weather for a city.Depends on the temperature , the user can see different images
+![image]()
+
+
 
 ## Available Scripts
 
